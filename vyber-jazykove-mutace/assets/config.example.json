@@ -1,0 +1,32 @@
+{
+  "_poznamka": "Ukázka pro cestovatelský web. Všechna čísla jsou smyšlená; koncepty, trhy i hodnoty nahraď vlastními. Kódy trhů ověř přes scripts/check_access.py --find <země>.",
+  "currency": "USD",
+  "revenue_per_click": 0.10,
+  "launch_cost": 500,
+  "reference_efficiency": {"low": 10, "base": 25, "high": 60},
+  "markets": {
+    "cs": {"name": "Česko", "role": "anchor", "language_code": "cs", "location_code": 2203, "domestic": []},
+    "pl": {"name": "Polsko", "role": "anchor", "language_code": "pl", "location_code": 2616, "domestic": []},
+    "ro": {"name": "Rumunsko", "role": "candidate", "language_code": "ro", "location_code": 2642, "domestic": []},
+    "hr": {"name": "Chorvatsko", "role": "candidate", "language_code": "hr", "location_code": 2191, "domestic": ["plitvice"]},
+    "no": {"name": "Norsko", "role": "candidate", "language_code": "nb", "location_code": 2578, "serp_language_code": "nb", "domestic": []}
+  },
+  "basket": {
+    "plitvice": {"cs": ["plitvická jezera"], "pl": ["jeziora plitwickie"], "ro": ["lacurile plitvice"], "hr": ["plitvička jezera"], "no": ["plitvicesjøene"]},
+    "crete": {"cs": ["kréta"], "pl": ["kreta"], "ro": ["creta"], "hr": ["kreta"], "no": ["kreta"]},
+    "travel_insurance": {"cs": ["cestovní pojištění"], "pl": ["ubezpieczenie turystyczne"], "ro": ["asigurare de călătorie", "asigurare calatorie"], "hr": ["putno osiguranje"], "no": ["reiseforsikring"]}
+  },
+  "serp_checks": {
+    "ro": ["lacurile plitvice", "asigurare de calatorie"],
+    "no": ["plitvicesjøene", "reiseforsikring"]
+  },
+  "calibration": {
+    "cs": {"clicks_per_day": 1000, "native": true},
+    "pl": {"clicks_per_day": 120, "note": "28 dní ze Search Console"}
+  },
+  "candidates": {
+    "ro": {"fit": true, "value_multiplier": 1.0, "note": "první stránku drží hobby blogy"},
+    "hr": {"fit": true, "value_multiplier": 1.0, "note": "jádro košíku je domácí"},
+    "no": {"fit": false, "value_multiplier": 2.0, "note": "první stránku drží velké cestovní portály"}
+  }
+}
